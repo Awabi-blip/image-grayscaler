@@ -24,7 +24,7 @@ notice how arr[3,3] points to 18? it is implemented like a series of numbers in 
   [15,16,17,18,19]....
   ]
 
-**PS this was my first time working with Rust, so don't mind the lac of idiomacy!**
+**PS this was my first time working with Rust, so don't mind the lack of idiomacy!**
 
 ## Result looks like this:
 # Before:
