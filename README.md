@@ -1,10 +1,10 @@
 ## Datatyps:
 **RGB:**
--defines a struct that represents a pixel in a bitmap image, r= Red, b= Blue, g = Green, each having 8 bits of unsigned integers, because color value can not be in negatives.
+- defines a struct that represents a pixel in a bitmap image, r= Red, b= Blue, g = Green, each having 8 bits of unsigned integers, because color value can not be in negatives.
 
 **Image:**
--defines a struct for an image, that stores the width and the height of the image.
--stores pixels in a 1D Array because the rust compiler does not like undefined 2D arrays where it has to figure the size at compile time
+- defines a struct for an image, that stores the width and the height of the image.
+- stores pixels in a 1D Array because the rust compiler does not like undefined 2D arrays where it has to figure the size at compile time
 
 ## Why manual threading?
 I am using manual threads because this was my first ever time writing rust, and I wanted to learn the ins and outs of concurrency at a fundamental level. In production you'd always use built-in rust methods
