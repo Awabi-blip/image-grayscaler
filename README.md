@@ -1,4 +1,4 @@
-## Datatyps:
+## Datatypes:
 **RGB:**
 - defines a struct that represents a pixel in a bitmap image, r= Red, b= Blue, g = Green, each having 8 bits of unsigned integers, because color value can not be in negatives.
 
