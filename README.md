@@ -25,3 +25,12 @@ notice how arr[3,3] points to 18? it is implemented like a series of numbers in 
   ]
 
 **PS this was my first time working with Rust, so don't mind the lac of idiomacy!**
+
+## Result looks like this:
+# Before:
+<img width="1306" height="710" alt="Screenshot From 2026-03-25 09-48-21" src="https://github.com/user-attachments/assets/ffd48776-b120-430a-b067-5c2706a5c5cb" />
+
+# After:
+<img width="1306" height="710" alt="Screenshot From 2026-03-25 09-48-37" src="https://github.com/user-attachments/assets/2253c333-2bfa-45f4-acbd-211eab964c7e" />
+
+//Devnote: Raiden my goat
