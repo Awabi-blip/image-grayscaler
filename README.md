@@ -1,4 +1,4 @@
-## Datatypes:
+# Datatypes:
 **RGB:**
 - defines a struct that represents a pixel in a bitmap image, r= Red, b= Blue, g = Green, each having 8 bits of unsigned integers, because color value can not be in negatives.
 
@@ -6,11 +6,11 @@
 - defines a struct for an image, that stores the width and the height of the image.
 - stores pixels in a 1D Array because the rust compiler does not like undefined 2D arrays where it has to figure the size at compile time
 
-## Why manual threading?
+# Why manual threading?
 I am using manual threads because this was my first ever time writing rust, and I wanted to learn the ins and outs of concurrency at a fundamental level. In production you'd always use built-in rust methods
 
-## The 2D Array formula:
-# y * image.width + x:
+# The 2D Array formula:
+## y * image.width + x:
 - What this does it, takes our current position of y, so let's say 3 and multiplies it with the width so let's say 5, and adds the x value
 so let's say maybe, 3
 - This is how 2d Arrays work underneath the hood too:
@@ -26,11 +26,11 @@ notice how arr[3,3] points to 18? it is implemented like a series of numbers in 
 
 **PS this was my first time working with Rust, so don't mind the lack of idiomacy!**
 
-## Result looks like this:
-# Before:
+# Result looks like this:
+## Before:
 <img width="1306" height="710" alt="Screenshot From 2026-03-25 09-48-21" src="https://github.com/user-attachments/assets/ffd48776-b120-430a-b067-5c2706a5c5cb" />
 
-# After:
+## After:
 <img width="1306" height="710" alt="Screenshot From 2026-03-25 09-48-37" src="https://github.com/user-attachments/assets/2253c333-2bfa-45f4-acbd-211eab964c7e" />
 
 //Devnote: Raiden my goat
