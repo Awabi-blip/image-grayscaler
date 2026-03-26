@@ -23,15 +23,15 @@ so let's say maybe, 1
   ]
   Table View/Human View
 ```
--- **This is how we would look at a 2D array**, but the computer wouldn't for a computer it merely looks like this in memory RAM/DISK:
+- **This is how we would look at a 2D array**, but the computer wouldn't for a computer it merely looks like this in memory RAM/DISK:
 
 ```
   [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14] Metadata : width = 5
 
   A view of a 2D array in computers ram
 ```
--- **Now let's apply our function, y * width + x**
--- let's say I query, arr[2][3], if you look at the array 
+- **Now let's apply our function, y * width + x**
+- let's say I query, arr[2][3], if you look at the array 
 ```
   [
 
