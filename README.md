@@ -62,4 +62,4 @@ That's all.
 ## After:
 <img width="1306" height="710" alt="Screenshot From 2026-03-25 09-48-37" src="https://github.com/user-attachments/assets/2253c333-2bfa-45f4-acbd-211eab964c7e" />
 
-//Devnote: Doktor turn off my pain inhibitors
+```dev note: Doktor turn off my pain inhibitors```
