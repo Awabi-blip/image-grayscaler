@@ -12,18 +12,42 @@ I am using manual threads because this was my first ever time writing rust, and 
 # The 2D Array formula:
 ## y * image.width + x:
 - What this does it, takes our current position of y, so let's say 3 and multiplies it with the width so let's say 5, and adds the x value
-so let's say maybe, 3
-- This is how 2d Arrays work underneath the hood too:
-If I declared a **2D Array of [10][5]** it just means 10 rows, of 5 columns, if I then did a lookup using arr[3][5] it would need a way to mathematically calculate where to go, because in computers Ram there is no structure like 2D array unless explicitly defined, so everything is defined as single line of pixels. So like [rgb,rgb,rgb,rgb,rgb] * 10 which means total of 50 items! so if when i say, arr[3][3] I mean, go to the 3 * width which is 5, and add 3 to it so 18 which 
-This is how the 3rd element in the 3rd row would look like: 
-notice how arr[3,3] points to 18? it is implemented like a series of numbers in the memory but multiplying by the width give us the jumps in rows (you can think of it this way) and then add to the value to get the exact number on that jump/row
-- [
+so let's say maybe, 1
+- This is how 2d Arrays work underneath the hood too, a 2D array is not a struct, like you may assume it is, that is made by the language at compile time. It is simply an array, that has a specialised indexer, let me explain further:
+-- Let's declare the array as **DECLARE arr[3][5]** so 3 rows, (top to bottom) and 5 colums (left to right) for example look at the array below. (
+```
+  [
   [0,1,2,3,4]
   [5,6,7,8,9]
   [10,11,12,13,14]
-  [15,16,17,18,19]....
   ]
+  Table View/Human View
+```
+-- **This is how we would look at a 2D array**, but the computer wouldn't for a computer it merely looks like this in memory RAM/DISK:
 
+```
+  [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14] Metadata : width = 5
+
+  A view of a 2D array in computers ram
+```
+-- **Now let's apply our function, y * width + x**
+-- let's say I query, arr[2][3], if you look at the array 
+```
+  [
+
+i: 0,1,2,3,4,   
+0 [0,1,2,3,4]
+1 [5,6,7,8,9]
+2 [10,11,12,13,14]
+  ]
+  **Table View/Human View**
+```
+-- You can tell that is going to be, 2nd row, 3rd column, and that value is, 13 (starting from 0 for each row). 
+
+-- Now let's apply the formula, so it is always rows,columns (computer treats the first value as row[y](Vertical axis) and second as column[x](Horiztonal Axis) [row][column]
+ ``` [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14] Metadata : width = 5 ```
+-- So this is going to be, for arr[2][3] y = 2, x = 3, width = 5 (which was stored in comp's metadata) so; we get, 2 * 5 + 3 = 13. That's all.
+  
 **PS this was my first time working with Rust, so don't mind the lack of idiomacy!**
 
 # Result looks like this:
